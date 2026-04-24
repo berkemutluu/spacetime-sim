@@ -105,10 +105,6 @@ Contributions are welcome! To contribute:
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 👤 Author
-
-**Berk Emütlü** — [GitHub Profile](https://github.com/berkemutluu)
-
 ## 🙋 Support
 
 For questions, issues, or suggestions, please:
