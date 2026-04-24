@@ -1,15 +1,71 @@
 {
-  "name": "tanstack_start_ts",
-  "private": true,
-  "sideEffects": false,
+  "name": "@berkemutluu/spacetime-sim",
+  "version": "1.0.0",
+  "description": "An interactive web-based simulation tool for exploring the principles of General Relativity",
+  "private": false,
+  "license": "MIT",
+  "author": {
+    "name": "Berk Emütlü",
+    "url": "https://github.com/berkemutluu"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/berkemutluu/spacetime-sim.git"
+  },
+  "bugs": {
+    "url": "https://github.com/berkemutluu/spacetime-sim/issues"
+  },
+  "homepage": "https://github.com/berkemutluu/spacetime-sim#readme",
+  "keywords": [
+    "spacetime",
+    "physics",
+    "general-relativity",
+    "simulation",
+    "visualization",
+    "einstein",
+    "gravity",
+    "interactive",
+    "react",
+    "typescript"
+  ],
   "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./styles": "./dist/styles.css"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "build:dev": "vite build --mode development",
+    "build:package": "tsc && vite build --mode lib",
     "preview": "vite preview",
     "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "prepare": "npm run build:package"
+  },
+  "peerDependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": false
+    },
+    "react-dom": {
+      "optional": false
+    }
   },
   "dependencies": {
     "@cloudflare/vite-plugin": "^1.25.5",
