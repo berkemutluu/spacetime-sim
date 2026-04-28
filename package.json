@@ -45,11 +45,14 @@
     "README.md",
     "LICENSE"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "sideEffects": false,
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "build:package": "tsc && vite build --mode lib",
+    "build:package": "vite build --config vite.config.lib.ts && tsc -p tsconfig.lib.json",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write .",
