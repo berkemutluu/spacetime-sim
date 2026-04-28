@@ -8,6 +8,9 @@
     "name": "Berk Emütlü",
     "url": "https://github.com/berkemutluu"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/berkemutluu/spacetime-sim.git"
