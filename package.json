@@ -1,12 +1,15 @@
 {
   "name": "@berkemutluu/spacetime-sim",
-  "version": "1.0.0",
+  "version": "2.0.1",
   "description": "An interactive web-based simulation tool for exploring the principles of General Relativity",
   "private": false,
   "license": "MIT",
   "author": {
     "name": "Berk Emütlü",
     "url": "https://github.com/berkemutluu"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "repository": {
     "type": "git",
