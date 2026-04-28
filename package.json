@@ -48,9 +48,6 @@
     "README.md",
     "LICENSE"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
   "sideEffects": false,
   "scripts": {
     "dev": "vite dev",
